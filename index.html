@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VekroSound</title>
+        <meta name="description" content="Trash music private library created by kiddo.">
+        <meta name="theme-color" content="#941ed9">
+        <meta property="og:image" content="https://media.discordapp.net/attachments/1047973567784030295/1239990354665799796/logovs.png?ex=6644ee82&is=66439d02&hm=b51eea7c27d8149565acfafaba2605f18408825d440baa06949dbc8c27a5cc08&=&format=webp&quality=high&width=260&height=260">
+        <meta property="og:type" content="website">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        
+       <!--favicon-img--> 
+       <link rel="icon" type="image/png" href="images/favicon.png">
+       <!--favicon-img-->
+    
+        <link rel="stylesheet" href="css/index.css">
+       
+    
+    </head>
+<body>
+    <main id="songs-one">
+
+
+        
+        <div class="cursor scale"></div>
+        <div class="cursor-two scale"></div>
+
+
+        <div id="preloader">
+            <div class="p">
+            </div>
+            <div class="p">Loading...</div>
+        </div>
+
+<!-- CONTENT -->
+        <div id="songs-one-content">
+
+
+
+   <!-- NAVIGATION -->
+   <div class="navigation">
+    <div class="logo hover ">
+       <a class="text">VekroSound</a>
+    </div>
+</div>
+<!-- NAVIGATION -->
+
+
+<!-- HEADING -->
+<div class="heading">
+    <div class="text">
+      SONGS
+    </div>
+</div>
+
+<!-- HEADING -->
+
+
+
+
+<!-- SONGS CONTAINER -->
+
+
+<div class="center">
+<div id="songs-container">
+
+
+
+    <!-- SONG -->
+<div class="song fade-up">
+
+    <div class="song-img">
+        <img src="images/tvorimg.png" alt="fotka songy">
+    </div>
+
+    <div class="song-details">
+        <div class="song-details-content">
+        <div class="song-name">Čistotný tvor</div>
+        <div class="artist-name">Vekrotis</div>
+        </div>
+        <div class="music-player">
+         
+            <div class="play-song mouse">
+                <img src="images/play.png" alt="play" data-song="cistotnytvor">
+                <!--   DATA-SONG AND DATA-AUDIO VALUE SHOULD MATCH   -->
+                <audio data-audio="cistotnytvor">
+                    <source src="music/Čistotný-tvor.ogg" type="audio/ogg">
+                    <source src="music/Čistotný tvor.mp3" type="audio/mp3">
+                    </audio> 
+            </div>
+            <div class="download-song mouse">
+                <a href="music/Čistotný tvor.mp3"  download="Čistotný tvor - Vekrotis"><img src="images/download.png" alt="download"></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- SONG -->
+
+
+
+
+        <!-- SONG -->
+<div class="song fade-up">
+    <div class="song-img">
+        <img src="images/tvorac.jpg" alt="fotka songy">
+    </div>
+    <div class="song-details">
+        <div class="song-details-content">
+        <div class="song-name">Čistotný tvor (acoustic)</div>
+        <div class="artist-name">Vekrotis</div>
+        </div>
+        <div class="music-player"> 
+            <div class="play-song mouse">
+                <!-- DATA-SONG AND DATA-AUDIO SHOULD EXACTLY BE SAME -->
+                <img src="images/play.png" alt="play" data-song="cistotnytvor-a">
+                <!--   DATA-SONG AND DATA-AUDIO VALUE SHOULD MATCH   -->
+                <audio data-audio="cistotnytvor-a">
+                    <source src="music/Čistotný-tvor-_acoustic_.ogg" type="audio/ogg">
+                    <source src="music/Čistotný tvor (acoustic).mp3" type="audio/mp3">
+                    </audio> 
+            </div>
+            <div class="download-song">
+                <a href="music/Čistotný tvor (acoustic).mp3"  download="Čistotný tvor (acoustic) - Vekrotis"><img src="images/download.png" alt="download"></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- SONG -->
+</div>
+</div>
+
+<!-- SONGS CONTAINER -->
+
+
+
+ <!-- HEADPHONE IMG -->
+ <div class="headphone img text">
+    <img src="images/vslogo.png" title="VekroSound small logo" class="text" alt="headphone">
+  </div>
+   <!-- HEADPHONE IMG -->
+  
+               
+   
+ <!-- MUSIC INDICATOR -->
+ <div class="music-indicator">
+    <span style="--i:1;" class="music-indicator-span"></span>
+    <span style="--i:2;" class="music-indicator-span "></span>
+    <span style="--i:3;" class="music-indicator-span "></span>
+    <span style="--i:4;" class="music-indicator-span "></span>
+  </div>
+   <!-- MUSIC INDICATOR -->
+  
+               
+
+
+<!-- progress-bar -->
+<div class="progress-bar-container fade-in">
+    <div class="progressbar"></div>
+</div>
+<!-- progress-bar -->
+
+
+
+
+
+
+        </div>
+<!-- CONTENT -->
+    </main>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bez.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
